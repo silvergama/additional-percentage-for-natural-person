@@ -26,8 +26,8 @@ function apfnp_custom_price($price, $product) {
     if(is_user_logged_in() && apfnp_is_company()) return $price;
     
     $percentage = get_option( 'apfnp_additional_percentage_for_natural_person', '' );
-    $aditional = apfnp_calc_percentage($percentage, $price);
-    return $price + $aditional;
+    $additional = apfnp_calc_percentage($percentage, $price);
+    return $price + $additional;
     
 }
 
